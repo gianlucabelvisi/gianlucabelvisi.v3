@@ -1,0 +1,70 @@
+---
+path: "/release-notes"
+date: 1970-01-01
+title: "Release Notes"
+subTitle: "This website has release notes. It's a thing I do."
+author: "Gianluca Belvisi"
+cardImage: "card.jpg"
+featureImage: "card.jpg"
+featureImagePhone: "card.jpg"
+onHover: "not boring at all!"
+hashtags: "this blog"
+hidden: true
+---
+This website has release notes. It's a thing I do.
+
+## How to read a version
+
+A version comprises three numbers: major.minor.patch
+
+* *Major*: used for big updates. Not necessarily breaking changes, but something that you should notice. A redesign. A new section, maybe.
+* *Minor*: new features of medium importance
+* *Patch*: bug fixes or minor improvements
+
+## Version 2.1.0 - Swipe support
+* Now you can swipe the Netflix content on mobile
+
+## Version 2.0.0 - Netflix layout!
+
+More information [here](/netflix)
+
+## Version 1.5.0 - Poll system and reaction!
+* Backend support for the win! We have a custom reaction component and...
+
+![](reactions.png)
+
+* A component for polls
+
+![](polls.png)
+
+## Version 1.4.0 - View counter!
+* Implemented a view counter via Firebase real time database
+![](viewcounter.png)
+
+## Version 1.3.0 - Unlisted posts
+* Blog post links no longer open in a new tab. That was more annoying than not
+* Now posts can be unlisted from the main blog entries page. But they are still there
+![Unlisted](unlisted.png)
+
+## Version 1.2.0 - Post scheduling
+* Social share buttons! They are only visible in desktop mode, as from mobile you know your way around sharing posts. Also, there isn't enough real estate
+* Possibility of publishing posts dated in the future that won't be shown until they reach publication date! This is possible thanks to the following:
+![Is Future](isfuture.png)
+
+## Version 1.1.0 - Hiding navbar!
+* The navbar now hides when you scroll down for more than 100 pixels. Shows up again when you scroll up
+* The 404 page is now working, albeit minimalistic AF
+* Added link to more posts at the end of each post
+* The YouTube embed component is now responsive, thanks to this [tutorial](https://avexdesigns.com/blog/responsive-youtube-embed)
+* **Fixed** Giovannozzi bug in the social container when displayed on a shitty phone
+![Giovannozzi](giovannozzi.png)
+
+## Version 1.0.0 - le comments!
+
+I'd say we reached the first milestone thanks to Disqus comments being integrated in the blog posts!
+
+And all it took was basically adding this piece of code.
+
+![Actual code](dscode.png)
+
+I'm not crazy about the emoji reactions: too big, too dumb. So I'm thinking about reimplementing them on my own.
