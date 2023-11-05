@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `GianlucaBelvisi.com`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://gianlucabelvisi.com`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
