@@ -17,6 +17,7 @@
   "dependencies": {
     "@fontsource/fredoka-one": "^5.0.5",
     "@fontsource/pacifico": "^5.0.8",
+    "@mdx-js/react": "^2.3.0",
     "aos": "^2.3.4",
     "babel-plugin-styled-components": "^2.1.4",
     "dotenv": "^16.3.1",
@@ -27,6 +28,7 @@
     "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
+    "gatsby-plugin-mdx": "^5.12.3",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
     "gatsby-plugin-styled-components": "^6.12.0",

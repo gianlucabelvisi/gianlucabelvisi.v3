@@ -43,6 +43,14 @@ module.exports = {
                 shortname: `gianlucabelvisi`
             }
         },
+        `gatsby-plugin-mdx`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `pages`,
+                path: `${__dirname}/src/posts`,
+            },
+        },
         {
             resolve: 'gatsby-source-filesystem',
             options: {
