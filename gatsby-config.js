@@ -1,18 +1,19 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
     siteMetadata: {
-        title: `GianlucaBelvisi.com`,
-        siteUrl: `https://gianlucabelvisi.com`
+        title: "gianlucabelvisi.com",
+        description: `Homepage of Gianluca Belvisi.`,
+        author: `@gbelvs`,
+        version: '2.1.0',
+    },
+    flags: {
+        PRESERVE_FILE_DOWNLOAD_CACHE: true,
+        PRESERVE_WEBPACK_CACHE: true
     },
     plugins: [
-        "gatsby-plugin-styled-components",
-        "gatsby-plugin-image",
         "gatsby-plugin-sitemap",
         {
             resolve: 'gatsby-plugin-manifest',
@@ -20,8 +21,37 @@ module.exports = {
                 "icon": "src/images/icon.png"
             }
         },
+        "gatsby-plugin-styled-components",
+        "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
+        `gatsby-transformer-remark`,
+        `gatsby-transformer-json`,
+        `gatsby-plugin-offline`,
+        "gatsby-plugin-react-helmet",
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Gianluca Belvisi's Blog`,
+                short_name: `Gianluca Belvisi`,
+                start_url: `/`,
+                background_color: `#131313`,
+                theme_color: `#131313`,
+                display: `minimal-ui`,
+                icon: `src/assets/images/icon.jpg`, // This path is relative to the root of the site.
+                cache_busting_mode: 'query',
+                legacy: true,
+                orientation: `portrait`,
+                screenshots: [
+                    {
+                        src: "src/assets/images/icon.jpg",
+                        sizes: "563x563",
+                        type: "image/jpg"
+                    }
+                    // ... more screenshots
+                ]
+            },
+        },
         {
             resolve: "gatsby-plugin-firebase",
             options: {
